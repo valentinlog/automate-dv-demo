@@ -28,15 +28,18 @@ models:
       +materialized: view
       +tags:
         - 'raw'
+      +schema: raw
     stage:
       +materialized: view
       +tags:
         - 'stage'
       +enabled: true
+      +schema: stage
     raw_vault:
       +materialized: incremental
       +tags:
         - 'raw_vault'
+      +schema: raw_vault
       hubs:
         +tags:
           - 'hub'
