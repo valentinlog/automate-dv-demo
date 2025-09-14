@@ -4,6 +4,7 @@ target/
 logs
 
 .idea/
+.venv/
 
 dbt_modules
 dbt_packages
